@@ -1,3 +1,4 @@
+// Main Styling
 body
   font-family: $main-font
   background: $secondary-color
@@ -8,8 +9,6 @@ body
   justify-content: center
   align-items: center
   background-color: $secondary-color
-
-
 
 .body-wrapper
   margin: auto
@@ -28,9 +27,6 @@ body
 .bodyTransition
   transform: translateY(0)
 
-
-
-
 .game-board
   width: 100%
   padding: 25px
@@ -47,8 +43,6 @@ body
     transition: all .5s
   .headerOne
     font-weight: 100
-
-
 
 .sqr
   padding: 0
@@ -91,7 +85,7 @@ body
 h3
   font-size: 7em
 
-
+//Gamboard boders to create tic tac toe hash
 .box-id-11
 .box-id-12, .box-id-32
   border-left: 3px solid $primary-color
@@ -107,8 +101,6 @@ h3
 .box-id-32
 .box-id-33
 
-
-
 .x
   color: $x-color
   transition: .5s
@@ -118,13 +110,10 @@ h3
   transition: .5s
 
 .signature
-
   position: absolute
   top: 30px
   right: 30px
   font-size: 1em
-
-
   a
     color: $primary-color
     text-decoration: none
@@ -135,7 +124,6 @@ h3
 //NEON CLASSES
 
 .neonSign
-
   font-size: 1em
   padding-left: 30px
   &:hover
@@ -144,6 +132,7 @@ h3
   color: $x-color
 .neoff
   color: $o-color
+//Creates text shadows for Neon
 .neonActive
   color: #fff
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px $x-color, 0 0 7px $x-color, 0 0 8px $x-color, 0 0 10px $x-color, 0 0 15px $x-color
@@ -151,11 +140,9 @@ h3
   color: #fff
   text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px $o-color, 0 0 7px $o-color, 0 0 8px $o-color, 0 0 10px $o-color, 0 0 15px $o-color
 
-
 .h1Neon
   color: #fff
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $primary-color, 0 0 70px $primary-color, 0 0 80px $primary-color, 0 0 100px $primary-color, 0 0 150px $primary-color
-
 
 .xNeon
   color: #fff
@@ -166,12 +153,13 @@ h3
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $o-color, 0 0 70px $o-color, 0 0 80px $o-color, 0 0 100px $o-color, 0 0 150px $o-color
 
 
-//LOADING
+//LOADING icons before page fully loads
 .loading
   position: fixed
   top: 0
   left: 0
-  width: 100vh
+  width: 100vw
   height: 100vh
   z-index: 100
   background: $secondary-color
+  
