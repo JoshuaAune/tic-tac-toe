@@ -1,2 +1,177 @@
 body
-  background: green
+  font-family: $main-font
+  background: $secondary-color
+  color: $primary-color
+  min-height: 100vh
+  border: 3px solid white
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $secondary-color
+
+
+
+.body-wrapper
+  margin: auto
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100vh
+  max-height: 800px
+  max-width: 420px
+  width: 100%
+  padding: 30px 0
+  transition: all 1s
+  transition: transform 2s
+  transform: translateY(-5px)
+
+.bodyTransition
+  transform: translateY(0)
+
+
+
+
+.game-board
+  width: 100%
+  padding: 25px
+  transition: all 2s
+
+.game-boardTransition
+  margin: 25px 0
+
+.header
+  text-align: center
+  h1
+    display: inline-block
+    font-size: 3.5em
+    transition: all .5s
+  .headerOne
+    font-weight: 100
+
+
+
+.sqr
+  padding: 0
+  text-align: center
+  height: 30vw
+  max-height: 126px
+
+.new-game
+  border: 3px solid $primary-color
+  float: none
+  text-align: center
+  padding: 3px 0
+  margin: 10px auto
+  border-radius: 50px
+  &:hover
+    cursor: pointer
+    background: $primary-color
+    color: $secondary-color
+  &:active
+    cursor: pointer
+    background: $primary-color
+    color: $secondary-color
+
+
+.box-id-11,
+.box-id-12,
+.box-id-13,
+.box-id-21,
+.box-id-22,
+.box-id-23,
+.box-id-31,
+.box-id-32,
+.box-id-33,
+  display: flex
+  justify-content: center
+  align-items: center
+  &:hover
+    cursor: pointer
+
+h3
+  font-size: 7em
+
+
+.box-id-11
+.box-id-12, .box-id-32
+  border-left: 3px solid $primary-color
+  border-right: 3px solid $primary-color
+.box-id-13
+.box-id-21
+.box-id-22
+  border: 3px solid $primary-color
+.box-id-23, .box-id-21
+  border-top: 3px solid $primary-color
+  border-bottom: 3px solid $primary-color
+.box-id-31
+.box-id-32
+.box-id-33
+
+
+
+.x
+  color: $x-color
+  transition: .5s
+
+.o
+  color: $o-color
+  transition: .5s
+
+.signature
+
+  position: absolute
+  top: 30px
+  right: 30px
+  font-size: 1em
+
+
+  a
+    color: $primary-color
+    text-decoration: none
+    &:hover
+      cursor:pointer
+      color: $x-color
+
+//NEON CLASSES
+
+.neonSign
+
+  font-size: 1em
+  padding-left: 30px
+  &:hover
+  cursor: pointer
+.neon
+  color: $x-color
+.neoff
+  color: $o-color
+.neonActive
+  color: #fff
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px $x-color, 0 0 7px $x-color, 0 0 8px $x-color, 0 0 10px $x-color, 0 0 15px $x-color
+.neoffActive
+  color: #fff
+  text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px $o-color, 0 0 7px $o-color, 0 0 8px $o-color, 0 0 10px $o-color, 0 0 15px $o-color
+
+
+.h1Neon
+  color: #fff
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $primary-color, 0 0 70px $primary-color, 0 0 80px $primary-color, 0 0 100px $primary-color, 0 0 150px $primary-color
+
+
+.xNeon
+  color: #fff
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $x-color, 0 0 70px $x-color, 0 0 80px $x-color, 0 0 100px $x-color, 0 0 150px $x-color
+
+.oNeon
+  color: #fff
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $o-color, 0 0 70px $o-color, 0 0 80px $o-color, 0 0 100px $o-color, 0 0 150px $o-color
+
+
+//LOADING
+.loading
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vh
+  height: 100vh
+  z-index: 100
+  background: $secondary-color

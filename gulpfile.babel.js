@@ -5,11 +5,10 @@ import babel from 'gulp-babel';
 import plumber from 'gulp-plumber';
 import concat from 'gulp-concat';
 
-//Scripts Task
-//Uglifies
+let jsSource = ['./js/angular/app.js', './js/**/*.js']
 
 gulp.task('scripts', () => {
-  return gulp.src('js/*.js')
+  return gulp.src(jsSource)
   .pipe(plumber())
   .pipe(babel({
     presets: ["es2015"]
@@ -18,15 +17,6 @@ gulp.task('scripts', () => {
   .pipe(gulp.dest('build/js'));
 });
 
-gulp.task('frontjs', () => {
-  return gulp.src(paths.jsSource)
-  .pipe(plumber())
-  .pipe(babel({
-    presets: ["es2015"]
-  }))
-  .pipe(concat('bundle.js'))
-  .pipe(gulp.dest(paths.jsDest));
-});
 
 //Styles Task
 //Uglifies
@@ -44,7 +34,7 @@ gulp.task('styles', () => {
 // Watch Task
 // Watches JS
 gulp.task('watch', function(){
-  gulp.watch('js/*.js', ['scripts']);
+  gulp.watch(jsSource, ['scripts']);
   gulp.watch('styles/*.sass', ['styles']);
 });
 

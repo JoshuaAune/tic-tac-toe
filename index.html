@@ -1,0 +1,89 @@
+<!doctype HTML>
+  <html ng-app='app'>
+    <head>
+      <title>TIC TAC TOE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="./build/css/reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./build/css/master.css">
+    </head>
+
+    <body ng-controller='ctrl'>
+      <!-- jQuery directive -->
+      <animation></animation>
+
+      <section class="body-wrapper">
+        <p class="neonSign" ng-click="switch()"><span>NEON </span><span class="neon">ON </span><span class="neoff neoffActive">OFF</span></p>
+        <div class="signature"><a href ='http://joshuaaune.com/' target="_blank">joshuaaune.com</a></div>
+        <section class="header col-xs-12">
+
+            <h1 class="headerOne">{{display.one}}</h1><h1 class="header2">{{display.two}}</h1>
+        </section>
+        <!-- GAME BOARD -->
+        <section class="container game-board game-boardTransition">
+          <div class="row">
+            <div class="sqr col-xs-4 box-id-11" ng-click='click($event, id11, ".box-id-11") '>
+
+
+            </div>
+            <div class="sqr col-xs-4 box-id-12" ng-click='click($event, id12, ".box-id-12") '>
+              <h3></h3>
+
+            </div>
+            <div class="sqr col-xs-4 box-id-13" ng-click='click($event, id13, ".box-id-13") '>
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="sqr col-xs-4 box-id-21" ng-click='click($event, id21, ".box-id-21") '>
+
+
+            </div>
+            <div class="sqr col-xs-4 box-id-22" ng-click='click($event, id22, ".box-id-22") '>
+
+
+            </div>
+            <div class="sqr col-xs-4 box-id-23" ng-click='click($event, id23, ".box-id-23") '>
+
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="sqr col-xs-4 box-id-31" ng-click='click($event, id31, ".box-id-31") '>
+
+
+            </div>
+            <div class="sqr col-xs-4 box-id-32" ng-click='click($event, id32, ".box-id-32") '>
+
+
+            </div>
+            <div class="sqr col-xs-4 box-id-33" ng-click='click($event, id33, ".box-id-33") '>
+
+
+            </div>
+          </div>
+        </section>
+        <!-- END GAME BOARD -->
+        <div class="new-game col-xs-8" ng-click="reload()">NEW GAME</div>
+
+
+
+        <!--LOADING-->
+        <div class="loading">LOADING ...</div>
+
+
+
+        <!-- SCRIPTS -->
+        <script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="./build/js/bundle.js"></script>
+        <!-- <script src="./js/angular/app.js"></script>
+        <script src="./js/angular/ctrl.js"></script>
+        <script src="./js/angular/srvc.js"></script>
+        <script src="./js/angular/directives/jquery.js"></script> -->
+      </section>
+    </body>
+  </html>
